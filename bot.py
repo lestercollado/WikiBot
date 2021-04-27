@@ -56,7 +56,8 @@ def search_wikipedia(text,chat):
             chat.send_message("No se encontraron resultados, ni sugerencias")
         else:
             for sug in busqueda:
-                text_result = text_result +"➖ "+sug+"\n"
+                url = wikipedia.WikipediaPage(sug).url
+                text_result = text_result +"➖ "+sug+" ["+short_url(url)+"]"+"\n"
             chat.send_message(text_result,parse_mode=ParseMode.HTML)  
 
 def random_wikipedia(update, context):
