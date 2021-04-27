@@ -9,7 +9,7 @@ wikipedia.set_lang("es")
 
 def start(update, context):
     update.message.reply_text(
-        text = "👋 Bienvenido al bot para buscar en la Wikipedia."
+        text = "👋 Hola, soy un bot para realizar búsquedas en la Wikipedia.\n ⁉️ Consulta la /ayuda para que aprendas como utilizarme"
     )
 
 def help(update, context):
