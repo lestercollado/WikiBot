@@ -67,7 +67,7 @@ def random_wikipedia(update, context):
     chat.send_message("<b>Título: </b>"+wikipedia.WikipediaPage(rand).title+"\n"+wikipedia.WikipediaPage(rand).summary+"\n"+"🌐 Ver más: "+wikipedia.WikipediaPage(rand).url,parse_mode=ParseMode.HTML)  
 
 if __name__ == '__main__':    
-    updater = Updater(token='1790924272:AAGxVDIseRQhA9DXX6z6PBfix7I3f9cOmh0', use_context=True)
+    updater = Updater(token='1790924272:AAHc_OvukFpvDLLYSeUCeJ7mt7RznEiuQd0', use_context=True)
 
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('iniciar',start))
