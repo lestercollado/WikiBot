@@ -73,6 +73,7 @@ if __name__ == '__main__':
     dp.add_handler(CommandHandler('iniciar',start))
     dp.add_handler(CommandHandler('start',start))
     dp.add_handler(CommandHandler('ayuda',help))
+    dp.add_handler(CommandHandler('help',help))
     dp.add_handler(CommandHandler('aleatoria',random_wikipedia))
     dp.add_handler(ConversationHandler(
         entry_points = [
