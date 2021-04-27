@@ -14,7 +14,7 @@ def start(update, context):
 
 def help(update, context):
     update.message.reply_text(
-        text = "<b>Ayuda del Bot.</b>\n🟡 El bot mostrará un resumen si encuentra el término buscado. \n🔵 Siempre retornará sugerencias de búsquedas que puedes utilizar para continuar tu búsqueda",
+        text = "<b>Ayuda del Bot.</b>\n🟡 El bot mostrará un resumen si encuentra el término buscado. \n🔵 Siempre retornará sugerencias de búsquedas que puedes utilizar para continuar tu búsqueda.\n🟠 Con el comando /aleatoria puedes obtener un resumen de una página aleatoria",
         parse_mode=ParseMode.HTML
     )
 
