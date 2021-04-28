@@ -13,6 +13,11 @@ def start(update, context):
         text = "👋 Hola, soy un bot para realizar búsquedas en la Wikipedia.\n ⁉️ Consulta la /ayuda para que aprendas como utilizarme"
     )
 
+def about(update, context):
+    update.message.reply_text(
+        text = "❗️ Desarrollado por Lester Collado Rolo.\n Telegram: @retsel2020"
+    )
+
 def help(update, context):
     update.message.reply_text(
         text = "<b>Ayuda del Bot.</b>\n🟡 El bot mostrará un resumen si encuentra el término buscado. \n🔵 Siempre retornará sugerencias de búsquedas que puedes utilizar para continuar tu búsqueda.\n <b>Comandos: </b>\n/aleatoria puedes obtener un resumen de una página aleatoria\n/buscar realizar búsquedas",
@@ -80,6 +85,7 @@ if __name__ == '__main__':
 
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('iniciar',start))
+    dp.add_handler(CommandHandler('info',about))
     dp.add_handler(CommandHandler('start',start))
     dp.add_handler(CommandHandler('ayuda',help))
     dp.add_handler(CommandHandler('help',help))
