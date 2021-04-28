@@ -10,7 +10,7 @@ wikipedia.set_lang("es")
 
 def start(update, context):
     update.message.reply_text(
-        text = "👋 Hola, soy un bot para realizar búsquedas en la Wikipedia.\n ⁉️ Consulta la /ayuda para que aprendas como utilizarme"
+        text = "👋 Hola, soy un bot para realizar búsquedas en la Wikipedia.\n ⁉️ Consulta la /ayuda para que aprendas como utilizarme.\n ❗️ Información con /info"
     )
 
 def about(update, context):
@@ -20,7 +20,7 @@ def about(update, context):
 
 def help(update, context):
     update.message.reply_text(
-        text = "<b>Ayuda del Bot.</b>\n🟡 El bot mostrará un resumen si encuentra el término buscado. \n🔵 Siempre retornará sugerencias de búsquedas que puedes utilizar para continuar tu búsqueda.\n <b>Comandos: </b>\n/aleatoria puedes obtener un resumen de una página aleatoria\n/buscar realizar búsquedas",
+        text = "<b>Ayuda del Bot.</b>\n🟡 El bot mostrará un resumen si encuentra el término buscado. \n🔵 Siempre retornará sugerencias de búsquedas que puedes utilizar para continuar tu búsqueda.\n <b>Comandos: </b>\n/aleatoria puedes obtener un resumen de una página aleatoria\n/buscar realizar búsquedas\n/info acerca de...",
         parse_mode=ParseMode.HTML
     )
 
